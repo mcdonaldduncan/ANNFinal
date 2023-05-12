@@ -90,7 +90,7 @@ internal class Program
             }
             else
             {
-                
+                playerNeuralNetwork.Train(new double[,] { { newInput[0], newInput[1], newInput[2], newInput[3], newInput[4], newInput[5] } }, playerOutput, 1000);
                 Console.WriteLine($"The player won! They have defeated {++monstersDefeated} monsters so far!");
             }
         }
